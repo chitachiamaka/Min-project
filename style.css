@@ -105,11 +105,9 @@ ol li{
 
     .grid-container{
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:g
-    "item1 item1" 
-    "item2 item3"
-  
-    ;
+    grid-template-areas:
+    "item1" 
+    "item2 item3";
 
     } 
 }
