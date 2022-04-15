@@ -23,14 +23,15 @@ main{
      "grid2 grid3" ;
 }
 .items-1{
-    /* text-align: center; */
+    text-align: center;
     /* margin-top: 30px; */
-    /* margin-left: 10px; */
+    margin-left: 10px;
   text-align: justify;
- 
+  background-color: #eee;
   position: relative;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  padding: 10px;
+  /* border-radius: 5px; */
+  height: 100%;
 
 }
 h2{
@@ -54,14 +55,15 @@ h2{
     font-weight: 500;
 }
 .items-2{
-    /* margin-top: 30px;
-    margin-left: 10px; */
+     /* margin-top: 30px; */
+    margin-left: 10px; 
     color: white;
     text-align: justify;
-    padding: 40px;
+    padding: 10px;
     position: relative;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    /* border-radius: 5px; */
+    background-color: #06a335;
+    height: 300px;
    
 }
 h3{
@@ -90,14 +92,15 @@ h5{
     text-align: center;
 }
 .items-3{
-    /* margin-top: 30px;
-    margin-left: 10px; */
+     /* margin-top: 30px; */
+    /* margin-left: 10px;  */
     color: white; 
     text-align: justify;
-    padding: 40px;
+    padding: 10px;
     position: relative;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+   /* border-radius: 5px; */
+    background-color: #12e4b6;
+    height: 300px;
 }
 h4{
     font-size: 2em;
@@ -111,14 +114,14 @@ ol li{
 }
 .grid1{
     grid-area: grid1;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .grid2{
-    background-color:  #06a335;
+    /* background-color:  #06a335; */
     grid-area: grid2;
 }
 .grid3{
-    background-color: #12e4b6;
+    /* background-color: #12e4b6; */
     grid-area: grid3;
 }
 @media screen and (max-width: 1000px) {
@@ -142,30 +145,46 @@ ol li{
         "grid1"
         "grid2"
         "grid3";
-        /* grid-template-rows: 1fr 1fr; */
         width: 350px;
         height: 100%;
         margin-top: 50px;
     }
-    .grid1, .grid2, .grid3{
-        height: 400px;
+    .items-1, .items-2, .items-3{
+        height: 300px;
         
     }
-    .grid1{
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
-    }
-    .grid2{
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-    }
+    .items-1, .para1, .para2{
+        line-height: 3;
+    font-size: 10px;
+    font-weight: 100;
+    padding-left: 10px;
 
+    }
+    h2{
+        padding-left: 10px;
+    
     
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width:360px){
     .grid-container{
         width: 100%;
     }
 
-}
+        .items-1, .items-2, .items-3{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .items-1, .para1, .para2{
+            line-height: 1.5;
+        font-size: 10px;
+        font-weight: 40;
+        /* padding-left: 10px; */
+    
+        }
+        h2{
+            padding-left: 5px;
+        }
+    }
+      
+    
